@@ -1,0 +1,422 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+@media (min-width : 769px) and (max-width : 1280px)
+{
+    @media (min-width : 1100px) and (max-width : 1280px)
+    {
+        #showcase,
+        #discount
+        {
+            height: 60vh;
+            overflow: hidden;
+            
+        }
+        #showcase .showcase-info,
+        #discount .showcase-info
+        {
+            margin-top: -60px;
+        }
+    }
+    @media (min-width : 770px) and (max-width : 1099px)
+    {
+        .light-paragraph
+        {
+            font-size: 15px;
+        }
+        .light-paragraph-15
+        {
+            font-size: 10px;
+        }
+
+        h3 
+        {
+            font-size: 10px;
+        }
+        .far
+        {
+            font-size: 10px;
+        }
+        .btn,
+        .btn-light
+        {
+            padding: 5px 10px;
+        }
+        @media (min-width : 910px) and (max-width : 1098px)
+        {
+
+            #showcase,
+            #discount
+            {
+                height: 50vh;
+                overflow: hidden;
+            }
+            #showcase .showcase-info
+            {
+                margin-top: -120px;
+            }
+            #discount .showcase-info
+            {
+                margin-top: -20px;
+            }
+            #showcase h1 
+            {
+                font-size: 30px;
+            }
+        }
+        @media (min-width : 771px) and (max-width : 909px)
+        {
+
+            #upper-header,
+            #nav-bar img 
+            {
+                display: none;
+            }
+            #blogs .flex-col
+            {
+                -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                        justify-content: center;
+                -webkit-box-align: center;
+                    -ms-flex-align: center;
+                        align-items: center;
+            }
+            #blogs .flex-col .flex-space-between
+            {
+                -webkit-box-orient: horizontal;
+                -webkit-box-direction: normal;
+                    -ms-flex-direction: row;
+                        flex-direction: row;
+            }
+
+            #blogs .flex-space-between,
+            #featured-products .flex-space-between
+            {
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                    -ms-flex-direction: column;
+                        flex-direction: column;
+            }
+
+            #popular .flex-space-between,
+            #follow .flex-space-between,
+            #footer .flex-space-between,
+            #trending .grid-col-4
+            {
+                display: -ms-grid;
+                display: grid;
+                -ms-grid-columns: 1fr 20px 1fr;
+                grid-template-columns: repeat(2, 1fr);
+                grid-gap: 20px;
+                -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                        justify-content: center;
+                -webkit-box-align: center;
+                    -ms-flex-align: center;
+                        align-items: center;
+            }
+            #showcase .container,
+            #discount .container
+            {
+                max-width: 100vw;
+            }
+            #showcase,
+            #discount
+            {
+                height: 40vh;
+                overflow: hidden;
+            }
+            #showcase h1,
+            #discount h1
+            {
+                font-size: 25px;
+            }
+            #showcase .showcase-info
+            {
+                padding-left: 20px;
+                margin-top: -180px;
+            }
+            #discount h4
+            {
+                font-size: 16px;
+            }
+            #discount .showcase-info
+            {
+                padding-left: 20px;
+                margin-top: -50px;
+            }
+            #popular .icons
+            {
+                margin-top: 80px;
+            }
+        }
+    }
+    
+}
+
+
+@media (min-width : 501px) and (max-width : 768px)
+{
+
+    #upper-header
+    {
+        display: none;
+    }
+    #nav-bar img
+    {
+        margin-bottom: 20px;
+    }
+    #nav-bar ul:last-child
+    {
+        margin-top: 20px;
+    }
+    #popular .flex-space-between,
+    #trending .grid-col-4,
+    #follow .flex-space-between,
+    #footer .flex-space-between
+    {
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 1fr 20px 1fr;
+        grid-template-columns: repeat(2, 1fr);
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+    }
+    .flex-space-between
+    {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+
+    }
+    #showcase .flex-space-between,
+    #discount .flex-space-between
+    {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+            -ms-flex-direction: column-reverse;
+                flex-direction: column-reverse;
+    }  
+    #showcase h1
+    {
+        font-size: 20px;
+    }
+    #showcase,
+    #discount
+    {
+        height: 105vh;   
+        overflow: hidden;
+    }
+    #discount
+    {
+        height: 100vh;   
+    }
+    #showcase .img
+    {
+        margin-bottom: 20px;
+    }
+    #discount img
+    {
+        margin-bottom: 40px;
+        
+    }
+    #showcase .container,
+    #discount .container
+    {
+        max-width: 100vw;
+    }
+    #popular .icons:nth-child(3),
+    #popular .icons:nth-child(4)
+    {
+        margin-top: 20px;
+    }
+
+    #blogs .flex-col
+    {
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        margin-bottom: 50px;
+    }
+    #blogs .flex-col .flex-space-between
+    {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+    }
+
+
+
+}
+@media (max-width : 500px)
+{
+    .container 
+    {
+        max-width: 95vw;
+    }
+    h3 
+    {
+        font-size: 14px;
+    }
+    .btn-light,
+    .btn 
+    {
+        padding: 10px 15px;
+    }
+    #upper-header
+    {
+        display: none;
+    }
+    #nav-bar img
+    {
+        margin-bottom: 20px;
+    }
+    #nav-bar img + ul li a
+    {
+        font-size: 11px;
+    }
+    #nav-bar ul:last-child
+    {
+        margin-top: 20px;
+    }
+    .grid-col-4
+    {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+    .flex-space-between,
+    .grid-col-4
+    {
+
+        -webkit-box-orient: vertical;
+
+        -webkit-box-direction: normal;
+
+            -ms-flex-direction: column;
+
+                flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+    }
+    
+    
+    #showcase h1
+    {
+        font-size: 18px;
+    }
+    #discount h1
+    {
+        font-size: 35px;
+    }
+    #showcase .img
+    {
+        width: 145%;
+        margin-left: -15px;
+        margin-bottom: 40px;
+    }
+    #discount img
+    {
+        width: 150%;
+        margin: 30px 0px;
+    }
+    #showcase .showcase-info
+    {
+        margin-top: -50px;
+    }
+    #showcase,
+    #discount
+    {
+        height: 100vh;
+        overflow: hidden;
+    }
+    #discount
+    {
+        height: 70vh;
+    }
+    #showcase .flex-space-between,
+    #discount .flex-space-between
+    {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+            -ms-flex-direction: column-reverse;
+                flex-direction: column-reverse;
+    } 
+
+    #featured-products .far,
+    #popular .far,
+    #trending .far
+    {
+        font-size: 12px;
+    }
+    .icons
+    {
+        height: 150px;
+        width: 150px;
+    }
+    #popular .icons:nth-child(2),
+    #popular .icons:nth-child(3),
+    #popular .icons:nth-child(4)
+    {
+        margin-top: 20px;
+    }
+
+    #trending .flex-col:first-child
+    {
+        margin-top: 50px;
+    }
+    #trending .flex-col
+    {
+        margin-bottom: -80px
+    }
+
+    #blogs .flex-space-between .flex-space-between
+    {
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    #blogs .light-paragraph-15
+    {
+        font-size: 10px;
+    }
+
+    #footer .flex-space-between
+    {
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: start;
+    }
+
+    #blogs img
+    {
+        width: 120%;
+    }
+
+    footer p
+    {
+        padding: 10px;
+        font-size: 10px;
+    }
+
+}
