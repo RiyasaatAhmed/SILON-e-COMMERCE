@@ -347,6 +347,7 @@ Paragraph Styling
 #nav-bar
 {
     background: #fff;
+    position: -webkit-sticky;
     position: sticky;
     z-index: 5;
     top: 0;
@@ -354,6 +355,7 @@ Paragraph Styling
 
 #nav-bar li
 {
+    position: -webkit-sticky;
     position: sticky;
     margin-right: 20px;
     font-weight: bold;
