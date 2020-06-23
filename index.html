@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/Style-Uglify.css">
-    <link rel="stylesheet" href="./css/tab-mobile-Uglify.css">
+    <link rel="stylesheet" href="./css/Style.css">
+    <link rel="stylesheet" href="./css/tab-mobile.css">
     <title>SILON e-COMMERCE</title>
 </head>
 <body>
@@ -28,45 +28,57 @@
         </header>
 
         <!-- Nav-bar -->
-        <nav id="nav-bar">
-            <div class="container flex-space-between p-tb-40">
+        <nav id="nav-bar" class="n">
+            <div class="container flex-space-between p-tb-20">
                 <img src="./img/logo.png" alt="logo">
-                <ul class="flex">
-                    <li> <a href=""> Home </a> </li>
-                    <li> <a href=""> Shop </a> </li>
-                    <li> <a href=""> Blog </a> </li>
-                    <li> <a href=""> Products </a> </li>
-                    <li> <a href=""> Brands </a> </li>
-                    <li> <a href=""> Contact </a> </li>
+                <ul class="flex p-tb-20">
+                    <li> <a href="#showcase"> Home </a> </li>
+                    <li> <a href="#featured-products"> Product </a> </li>
+                    <li> <a href="#popular"> Shop </a> </li>
+                    <li> <a href="#trending"> Brands </a> </li>
+                    <li> <a href="#blogs"> Blog </a> </li>
+                    <li> <a href="#footer"> Contact </a> </li>
+
                 </ul>
+                <div class="burger">
+                    <div class="line-1"></div>
+                    <div class="line-2"></div>
+                    <div class="line-3"></div>
+                </div>
                 <ul class="flex">
                     <li> <i class="fas fa-search"></i> </li>
                     <li> <i class="fas fa-shopping-cart"></i> <div>3</div></li> 
                     <li> <i class="far fa-heart"></i> <div>3</div></li> 
                 </ul>
+
             </div>
         </nav>
 
         <!-- Showcase -->
         <section id="showcase">
-            <div class="container flex-space-between">
-                <div class="showcase-info flex-col">
-                    <h4 class='light-paragraph'> Ultimale Collection </h4>
-                    <h1 class='m-20' > Complete Women Fashion Here </h1>
-                    <a href="" class="btn"> Shop Now </a>
+
+                <div class="video-wrapper">
+                    <video src="./img/video-1.mp4" autoplay="true" loop ="true" muted="true"></video>
                 </div>
-                <div class='img'>
-                    <img src="./img/ban-1.png" alt="">
-                </div>
-            </div>
-            
+                <div class="overlay"></div>
+                <div class='container'>
+                    <div class="showcase-info flex-col">
+                        <h4 class='light-paragraph'> Ultimale Collection </h4>
+                        <h1 class='m-20' > Complete Women Fashion Here </h1>
+                        <a href="" class="btn"> Shop Now </a>
+                    </div>
+                </div>         
         </section>
 
+
+        <div class="parallax">
+            <div class="layout"></div>
+            <h1 class="section-title"> Featured Products </h1>
+        </div>
         <!-- Featured Products -->
         <section id="featured-products">
             <div class="container">
-                <h1 class="section-title"> Featured Products </h1>
-                <div class="flex-space-between">
+                <div class="grid-col">
                     <div class="flex-col">
                         <img class="m-b-20" src="./img/products/1.jpg" alt="">
                         <p class="light-paragraph m-b-10 "> Red Women Purses </p>
@@ -112,23 +124,31 @@
 
         <!-- Discount -->
         <section id="discount">
-            <div class="container flex-space-between">
+            <div class="video-wrapper">
+                <video src="./img/video-2.mp4" autoplay="true" loop ="true" muted="true"></video>
+            </div>
+            <div class="overlay"></div>
+            <div class="container">
                 <div class="showcase-info flex-col">
                     <h1 class='m-b-20' > 50% off </h1>
-                    <h4 class=' light-paragraph m-b-20'> All Woman Collection </h4>
+                    <h4 class='m-b-20'> All Woman Collection </h4>
                     <a href="" class="btn"> Shop Now </a>
                 </div>
-                <img src="./img/ban-2.png" alt="">
-
             </div>
+
         </section>
+        
 
 
+
+        <div class="parallax">
+            <div class="layout"></div>
+            <h1 class="section-title"> Most Popular </h1>  
+        </div>
         <!-- Most Popular -->
         <section id="popular">
             <div class="container">
-                <h1 class="section-title"> Most Popular </h1>
-                <div class="flex-space-between">
+                <div class="grid-col">
                     <div class="flex-col">
                         <img class="m-b-20" src="./img/products/4.jpg" alt="">
                         <p class="light-paragraph m-b-10 "> Purse </p>
@@ -182,7 +202,7 @@
                     </div> 
                 </div>
 
-                <div class="flex-space-between">
+                <div class="grid-col">
 
                     <div class="flex-col icons">
                         <img class= "m-b-20" src="./img/feature-icons/1.png" alt="">
@@ -212,12 +232,15 @@
             </div> 
         </section>
 
+        <div class="parallax">
+            <div class="layout"></div>
+            <h1 class="section-title"> Top Trending </h1>
+        </div>
 
         <!-- Tending Products -->
         <section id="trending">
             <div class="container">
-                <h1 class="section-title"> Top Trending </h1>
-                <div class="grid-col-4">
+                <div class="grid-col">
                     <div class="flex-col">
                         <img class="m-b-20" src="./img/products/8.jpg" alt="">
                         <p class="light-paragraph m-b-10 "> Purse </p>
@@ -228,7 +251,7 @@
                             <i class="far fa-star"></i>
                             <i class="far fa-star"></i>
                         </div>
-                        <h3> $35.00 </h3>
+                        <h3 class="m-b-20"> $35.00 </h3>
                     </div>
 
                     <div class="flex-col">
@@ -241,7 +264,8 @@
                             <i class="far fa-star"></i>
                             <i class="far fa-star"></i>
                         </div>
-                        <h3> $15.00 </h3>
+                        <h3 class="m-b-20"> $15.00 </h3>
+
                     </div>
 
                     <div class="flex-col">
@@ -254,7 +278,8 @@
                             <i class="far fa-star"></i>
                             <i class="far fa-star"></i>
                         </div>
-                        <h3> $25.00 </h3>
+                        <h3 class="m-b-20"> $25.00 </h3>
+
                     </div> 
 
                     <div class="flex-col">
@@ -267,7 +292,7 @@
                             <i class="far fa-star"></i>
                             <i class="far fa-star"></i>
                         </div>
-                        <h3> $25.00 </h3>
+                        <h3 class="m-b-20"> $25.00 </h3>
                     </div> 
 
                     <div class="flex-col">
@@ -280,7 +305,9 @@
                             <i class="far fa-star"></i>
                             <i class="far fa-star"></i>
                         </div>
-                        <h3> $35.00 </h3>
+                        <h3 class="m-b-20"> $35.00 </h3>
+
+                  
                     </div>
     
                     <div class="flex-col">
@@ -293,7 +320,7 @@
                             <i class="far fa-star"></i>
                             <i class="far fa-star"></i>
                         </div>
-                        <h3> $15.00 </h3>
+                        <h3 class="m-b-20"> $15.00 </h3>
                     </div>
     
                     <div class="flex-col">
@@ -306,7 +333,7 @@
                             <i class="far fa-star"></i>
                             <i class="far fa-star"></i>
                         </div>
-                        <h3> $25.00 </h3>
+                        <h3 class="m-b-20"> $25.00 </h3>
                     </div> 
     
                     <div class="flex-col">
@@ -319,7 +346,7 @@
                             <i class="far fa-star"></i>
                             <i class="far fa-star"></i>
                         </div>
-                        <h3> $25.00 </h3>
+                        <h3 class="m-b-20"> $25.00 </h3>
                     </div> 
                 </div>
                 
@@ -327,12 +354,16 @@
         </section>
 
 
+
+        <div class="parallax">
+            <div class="layout"></div>
+            <h1 class="section-title"> SILON JOURNAL </h1>
+        </div>
         <!-- Blogs -->
 
         <section id="blogs">
             <div class="container">
-                <h1 class="section-title"> SILON JOURNAL </h1>
-                <div class="flex-space-between">
+                <div class="grid-col">
                     <div class="flex-col">
                         <img class="m-b-20" src="./img/post/1.jpg" alt="">
                         <p class="light-paragraph-10 date m-b-10 ">  <i class="fas fa-square"></i> 7th July, 2019 </p>
@@ -366,25 +397,21 @@
             </div>
         </section>
 
-        <!-- Follow Us -->
 
+        <div class="parallax">
+            <div class="layout"></div>
+            <h1 class="section-title"> FOLLOW US </h1>
+        </div>
+
+
+        <!-- Follow Us -->
         <section id="follow">
             <div class="container">
-                <h1 class="section-title"> FOLLOW US </h1>
-                <div class="flex-space-between">
-                    <div>
-                        <img src="./img/instagram/1.jpg" alt="">
-                    </div>
-                    <div>
-                        <img src="./img/instagram/2.jpg" alt="">
-                    </div>
-                    <div>
-                        <img src="./img/instagram/3.jpg" alt="">
-                    </div>
-                    <div>
-                        <img src="./img/instagram/4.jpg" alt="">
-                    </div>
-
+                <div class="grid-col">
+                    <img src="./img/instagram/1.jpg" alt="">
+                    <img src="./img/instagram/2.jpg" alt="">
+                    <img src="./img/instagram/3.jpg" alt="">
+                    <img src="./img/instagram/4.jpg" alt="">
                 </div>
             </div>
         </section>
@@ -392,7 +419,7 @@
         <!-- Footer -->
         <section id="footer">
             <div class="container">
-                <div class="flex-space-between">
+                <div class="grid-col">
                     <div class="about-us">
                         <h5 class="m-b-20"> About Us </h5>
                         <ul>
@@ -478,7 +505,8 @@
 
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
-
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
 
 </body>
 </html>
